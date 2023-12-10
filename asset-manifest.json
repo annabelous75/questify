@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/annabelous75/questify/static/css/main.7acaea2f.css",
-    "main.js": "/annabelous75/questify/static/js/main.07d3183d.js",
+    "main.css": "/annabelous75/questify/static/css/main.b9adc720.css",
+    "main.js": "/annabelous75/questify/static/js/main.503b9be3.js",
     "index.html": "/annabelous75/questify/index.html",
-    "main.7acaea2f.css.map": "/annabelous75/questify/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/annabelous75/questify/static/js/main.07d3183d.js.map"
+    "main.b9adc720.css.map": "/annabelous75/questify/static/css/main.b9adc720.css.map",
+    "main.503b9be3.js.map": "/annabelous75/questify/static/js/main.503b9be3.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.b9adc720.css",
+    "static/js/main.503b9be3.js"
   ]
 }
