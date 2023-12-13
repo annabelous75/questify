@@ -7,6 +7,15 @@
   --button-background-color: #FF851C;
   --main-text: #282828;
 }
+[data-theme='dark']{
+  --primary-background-color:#282828;
+  --loading-main-text: #fafafa;
+  --accent-color-questify: #00D7FF;
+  --secondary-text: #B9C3C8;
+  --button-background-color: #FF851C;
+  --main-text: #ffffff;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -14,9 +23,116 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:var(--primary-background-color);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  align-items: center;
+}
+@media screen and (min-width: 343px) {
+  .container {
+    width: 343px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 704px;
+  }
+
+  .page-container {
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1240px;
+  }
+}
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'),
+    url(./fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 500;
+  src: local('Poppins'),
+    url(./fonts/Poppins/Poppins-Medium.ttf) format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 600;
+  src: local('Poppins'),
+    url(./fonts/Poppins/Poppins-SemiBold.ttf) format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 700;
+  src: local('Poppins'),
+    url(./fonts/Poppins/Poppins-Bold.ttf) format('truetype');
+  font-display: swap;
 }
