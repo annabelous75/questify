@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkquestify=self.webpackChunkquestify||[]).push([[326],{326:function(e,s,n){n.r(s);n(791);var r=n(184);s.default=function(e){var s=e.userName;return(0,r.jsxs)("div",{children:["console.log('Rendering Dashboard component');",(0,r.jsxs)("h1",{children:["Welcome, ",s,"!"]}),(0,r.jsx)("p",{children:"This is your Dashboard. Here, you can manage your quests and challenges."})]})}}}]);
+//# sourceMappingURL=326.2684cbae.chunk.js.map

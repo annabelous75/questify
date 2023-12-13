@@ -1,13 +1,22 @@
 {
   "files": {
-    "main.css": "/annabelous75/questify/static/css/main.b9adc720.css",
-    "main.js": "/annabelous75/questify/static/js/main.503b9be3.js",
+    "main.css": "/annabelous75/questify/static/css/main.883de7a0.css",
+    "main.js": "/annabelous75/questify/static/js/main.7c984d0a.js",
+    "static/js/780.7995c5eb.chunk.js": "/annabelous75/questify/static/js/780.7995c5eb.chunk.js",
+    "static/js/326.2684cbae.chunk.js": "/annabelous75/questify/static/js/326.2684cbae.chunk.js",
+    "static/media/bg_.jpg": "/annabelous75/questify/static/media/bg_.9284116893bb3cffc7cb.jpg",
+    "static/media/Poppins-Regular.ttf": "/annabelous75/questify/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-Medium.ttf": "/annabelous75/questify/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/annabelous75/questify/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
+    "static/media/Poppins-Bold.ttf": "/annabelous75/questify/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
     "index.html": "/annabelous75/questify/index.html",
-    "main.b9adc720.css.map": "/annabelous75/questify/static/css/main.b9adc720.css.map",
-    "main.503b9be3.js.map": "/annabelous75/questify/static/js/main.503b9be3.js.map"
+    "main.883de7a0.css.map": "/annabelous75/questify/static/css/main.883de7a0.css.map",
+    "main.7c984d0a.js.map": "/annabelous75/questify/static/js/main.7c984d0a.js.map",
+    "780.7995c5eb.chunk.js.map": "/annabelous75/questify/static/js/780.7995c5eb.chunk.js.map",
+    "326.2684cbae.chunk.js.map": "/annabelous75/questify/static/js/326.2684cbae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9adc720.css",
-    "static/js/main.503b9be3.js"
+    "static/css/main.883de7a0.css",
+    "static/js/main.7c984d0a.js"
   ]
 }
