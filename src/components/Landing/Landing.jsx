@@ -14,7 +14,7 @@ const Landing = () => {
         <Login>Choose your name to sign up or log in</Login>
       <Inputdiv>
         <Input type="text" name="name"></Input>
-      <Link to="/annabelous75/questify/dashboard">
+      <Link to="/annabelous75/questify/register">
         <ButtonLanding>go!</ButtonLanding>
       </Link>
       </Inputdiv></Desktopdiv>
