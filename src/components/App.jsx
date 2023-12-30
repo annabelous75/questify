@@ -1,41 +1,26 @@
-import React, { lazy, Suspense, useState, useEffect } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import React, { lazy, Suspense, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Loader } from './Loader/Loader';
-import { Button } from './viewsRegistration/viewsRegistration.styled';
-import '../index.css';
-
-const Landing = lazy(() => import('./Landing/Landing'));
-const Dashboard = lazy(() => import('./Dashboard/Dashboard'));
-const Login = lazy(() => import('./viewsRegistration/Login'));
-const Register = lazy(() => import('./viewsRegistration/Register'));
+import '../index.css'; // Перевірте, чи імпортуєте стилі
+import PrivateRoute from 'Route/privateRoute';
+const Landing = lazy(() => import('../pages/Landing/Landing'));
+const Dashboard = lazy(() => import('../pages/Dashboard/Dashboard'));
 
 const App = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
-  const [hideToggle, setHideToggle] = useState(false);
-  const location = useLocation();
 
   const toggleTheme = () => {
     setIsDarkTheme(prevTheme => !prevTheme);
-    document.documentElement.setAttribute(
-      'data-theme',
-      isDarkTheme ? 'light' : 'dark'
-    );
+    document.documentElement.setAttribute('data-theme', isDarkTheme ? 'light' : 'dark');
   };
-
-  useEffect(() => {
-    const shouldHideToggle = location.pathname.includes('/login') || location.pathname.includes('/register');
-    setHideToggle(shouldHideToggle);
-  }, [location.pathname]);
 
   return (
     <div>
-      {!hideToggle && <Button onClick={toggleTheme}>Toggle Theme</Button>}
+      <button onClick={toggleTheme} className="button">Toggle Theme</button>
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/annabelous75/questify/" element={<Landing />} />
-          <Route path="/annabelous75/questify/dashboard" element={<Dashboard />} />
-          <Route path="/annabelous75/questify/login" element={<Login />} />
-          <Route path="/annabelous75/questify/register" element={<Register />} />
+          <PrivateRoute path="/annabelous75/questify/dashboard" element={<Dashboard />} />
         </Routes>
       </Suspense>
     </div>

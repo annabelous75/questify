@@ -3,7 +3,7 @@
   --primary-background-color:#ffffff;
   --loading-main-text: #15395A;
   --accent-color-questify: #00D7FF;
-  --secondary-text: #B9C3C8;
+  --secondary-text: hsl(200, 12%, 75%);
   --button-background-color: #FF851C;
   --main-text: #282828;
   --color-warning:#cc3300;
@@ -64,6 +64,15 @@ button {
   border: none;
   cursor: pointer;
   font-family: inherit;
+  align-self: center;
+  padding: 10px;
+  background-color: #FF851C;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  margin-left:9px;
+  margin-top:5px;
 }
 
 a {
@@ -111,7 +120,7 @@ a {
 @font-face {
   font-family: 'Poppins';
   src: local('Poppins'),
-    url(./fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+    url(../src/assets/fonts/Poppins/Poppins-Medium.ttf) format('truetype');
   font-display: swap;
 }
 
@@ -119,7 +128,7 @@ a {
   font-family: 'Poppins';
   font-weight: 500;
   src: local('Poppins'),
-    url(./fonts/Poppins/Poppins-Medium.ttf) format('truetype');
+    url(../src/assets/fonts/Poppins/Poppins-Medium.ttf) format('truetype');
   font-display: swap;
 }
 
@@ -127,7 +136,7 @@ a {
   font-family: 'Poppins';
   font-weight: 600;
   src: local('Poppins'),
-    url(./fonts/Poppins/Poppins-SemiBold.ttf) format('truetype');
+    url(../src/assets/fonts/Poppins/Poppins-SemiBold.ttf) format('truetype');
   font-display: swap;
 }
 
@@ -135,6 +144,6 @@ a {
   font-family: 'Poppins';
   font-weight: 700;
   src: local('Poppins'),
-    url(./fonts/Poppins/Poppins-Bold.ttf) format('truetype');
+    url(../src/assets/fonts/Poppins/Poppins-Bold.ttf) format('truetype');
   font-display: swap;
 }
